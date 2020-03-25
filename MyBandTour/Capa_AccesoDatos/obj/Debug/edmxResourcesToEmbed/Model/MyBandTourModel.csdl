@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyBandTourModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bandas">
+    <Key>
+      <PropertyRef Name="IdBanda" />
+    </Key>
+    <Property Name="IdBanda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnoFundacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Genero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Conciertos" Relationship="Self.FK_Conciertos_Bandas" FromRole="Bandas" ToRole="Conciertos" />
+  </EntityType>
+  <EntityType Name="Conciertos">
+    <Key>
+      <PropertyRef Name="IdConcierto" />
+    </Key>
+    <Property Name="IdConcierto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Pais" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaPresentacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Lugar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdBanda" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Bandas" Relationship="Self.FK_Conciertos_Bandas" FromRole="Conciertos" ToRole="Bandas" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Conciertos_Bandas">
+    <End Role="Bandas" Type="Self.Bandas" Multiplicity="1" />
+    <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bandas">
+        <PropertyRef Name="IdBanda" />
+      </Principal>
+      <Dependent Role="Conciertos">
+        <PropertyRef Name="IdBanda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyBandTourEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bandas" EntityType="Self.Bandas" />
+    <EntitySet Name="Conciertos" EntityType="Self.Conciertos" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK_Conciertos_Bandas" Association="Self.FK_Conciertos_Bandas">
+      <End Role="Bandas" EntitySet="Bandas" />
+      <End Role="Conciertos" EntitySet="Conciertos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

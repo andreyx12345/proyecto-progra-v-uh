@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyBandTourModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bandas">
+    <Key>
+      <PropertyRef Name="IdBanda" />
+    </Key>
+    <Property Name="IdBanda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AnoFundacion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Genero" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Conciertos">
+    <Key>
+      <PropertyRef Name="IdConcierto" />
+    </Key>
+    <Property Name="IdConcierto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Pais" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FechaPresentacion" Type="datetime" Nullable="false" />
+    <Property Name="Lugar" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdBanda" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contrasena" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Conciertos_Bandas">
+    <End Role="Bandas" Type="Self.Bandas" Multiplicity="1" />
+    <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bandas">
+        <PropertyRef Name="IdBanda" />
+      </Principal>
+      <Dependent Role="Conciertos">
+        <PropertyRef Name="IdBanda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyBandTourModelStoreContainer">
+    <EntitySet Name="Bandas" EntityType="Self.Bandas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Conciertos" EntityType="Self.Conciertos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Conciertos_Bandas" Association="Self.FK_Conciertos_Bandas">
+      <End Role="Bandas" EntitySet="Bandas" />
+      <End Role="Conciertos" EntitySet="Conciertos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

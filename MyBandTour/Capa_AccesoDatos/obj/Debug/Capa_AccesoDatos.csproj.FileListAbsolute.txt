@@ -1,0 +1,14 @@
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Capa_AccesoDatos.dll.config
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Capa_AccesoDatos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Capa_AccesoDatos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Capa_Objetos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\EntityFramework.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Capa_Objetos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\EntityFramework.xml
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\obj\Debug\Capa_AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\obj\Debug\Capa_AccesoDatos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_AccesoDatos\obj\Debug\Capa_AccesoDatos.pdb

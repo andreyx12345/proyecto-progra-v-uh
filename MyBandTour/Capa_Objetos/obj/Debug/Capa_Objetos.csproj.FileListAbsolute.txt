@@ -1,0 +1,5 @@
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_Objetos\bin\Debug\Capa_Objetos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_Objetos\bin\Debug\Capa_Objetos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_Objetos\obj\Debug\Capa_Objetos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_Objetos\obj\Debug\Capa_Objetos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_Objetos\obj\Debug\Capa_Objetos.csprojResolveAssemblyReference.cache

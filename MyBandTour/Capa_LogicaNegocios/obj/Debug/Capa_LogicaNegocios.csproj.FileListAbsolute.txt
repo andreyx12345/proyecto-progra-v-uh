@@ -1,0 +1,11 @@
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_LogicaNegocios.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_LogicaNegocios.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_AccesoDatos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_Objetos.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\EntityFramework.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_AccesoDatos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\Capa_Objetos.pdb
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\bin\Debug\EntityFramework.xml
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\obj\Debug\Capa_LogicaNegocios.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\obj\Debug\Capa_LogicaNegocios.dll
+C:\Users\Andrey\Desktop\Visual Studio proyects\ProyectoProgra\MyBandTour\Capa_LogicaNegocios\obj\Debug\Capa_LogicaNegocios.pdb
